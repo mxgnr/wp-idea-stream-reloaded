@@ -1,0 +1,120 @@
+body.is_new_idea form{
+	margin-bottom:40px;
+}
+body.is_new_idea label{
+	font-weight:bold;
+}
+body.is_new_idea .new-idea-form{
+	margin-bottom:20px;
+}
+body.is_new_idea small{
+	font-size:0.8em;
+}
+#wp_is_title{
+	width:98.5%;
+}
+.ideastream_btn{
+	background:#464646;
+	color:#FFF!important;
+	line-height:1.4em;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border:none;
+	padding:5px;
+}
+.ideastream_btn:hover{
+	background:#CCC;
+	color:#464646!important;
+	border:solid 1px #464646;
+}
+.is-action-btn{
+	padding:10px;
+	margin-right:10px;
+	text-align:right;
+}
+
+#content .wp_themeSkin .mceLayout{
+	border:solid 1px #E2E2E2;
+}
+#content .wp_themeSkin tr td {
+    padding: 0;
+}
+
+.wp_themeSkin tr.mceFirst td.mceToolbar {
+    background: url("../images/ed-bg.gif") repeat-x scroll left top #DFDFDF;
+    border-color: #DFDFDF;
+}
+
+.wp_themeSkin .mceButton {
+    color: #B2B2B2;
+}
+
+#content table.mceToolbar {
+    width: auto;
+    margin: 0 2px 2px;
+}
+
+
+.tagEditor
+{
+	margin: 4px 0;
+	padding: 0;
+}
+
+.tagEditor li
+{
+	display: inline;
+	background-image: url("../images/delete-tag.png");
+	background-color: #E4E4E4;
+	background-position: right center;
+	background-repeat: no-repeat;
+	list-style-type: none;
+	padding: 0 18px 0 6px;
+	margin: 0 4px;	
+	cursor: pointer;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.tagEditor li:hover
+{
+	background-color: #eee;
+}
+#ideastream_errors, #ideastream_moderation, #ideastream_notlogged{
+	border-width: 1px;
+	border-style: solid;
+	padding: 0 0.6em;
+	margin: 5px 15px 2px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+#ideastream_errors{
+	background-color: #ffebe8;
+	border-color: #c00;
+}
+#ideastream_errors p{
+	color:#c00;
+}
+#ideastream_errors ul li{
+	color:#c00;
+	font-weight:bold;
+}
+#ideastream_notlogged{
+	background-color: #ffffe0;
+	border-color: #e6db55;
+}
+#ideastream_notlogged p{
+	padding-top:20px;
+	text-align:center;
+}
+#ideastream_moderation{
+	background: #dffcd9;
+	border-color: #c4e9bd;
+}
+#ideastream_moderation p{
+	padding-top:20px;
+	text-align:center;
+}

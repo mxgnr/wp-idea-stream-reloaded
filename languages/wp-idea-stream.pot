@@ -1,0 +1,539 @@
+# Translation of the WordPress plugin wp-idea-stream by imath (twitter.com/imath).
+# Copyright (C) 2011 imath (twitter.com/imath)
+# This file is distributed under the same license as wp-idea-stream package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: wp-idea-stream 1.0\n"
+"Report-Msgid-Bugs-To: http://imath.owni.fr\n"
+"POT-Creation-Date: 2010-07-05 15:10+0000\n"
+"PO-Revision-Date: 2010-09-26 12:53+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.1\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. #-#-#-#-#  wp-idea-stream.pot (wp-idea-stream 1.0)  #-#-#-#-#
+
+#: wp-idea-stream.php:37
+msgid "Ideas"
+msgstr ""
+
+#: wp-idea-stream.php:38 wp-idea-stream.php:653 wp-idea-stream.php:694
+msgid "IdeaStream"
+msgstr ""
+
+#: wp-idea-stream.php:39 wp-idea-stream.php:266 wp-idea-stream.php:285 wp-idea-stream.php:695 wp-idea-stream-widgets.php:45
+msgid "All Ideas"
+msgstr ""
+
+#: wp-idea-stream.php:40
+msgid "Idea"
+msgstr ""
+
+#: wp-idea-stream.php:41 wp-idea-stream.php:42
+msgid "Add New Idea"
+msgstr ""
+
+#: wp-idea-stream.php:43
+msgid "Edit Idea"
+msgstr ""
+
+#: wp-idea-stream.php:44 wp-idea-stream.php:263 wp-idea-stream.php:282 wp-idea-stream.php:698 wp-idea-stream-widgets.php:46
+msgid "New Idea"
+msgstr ""
+
+#: wp-idea-stream.php:45
+msgid "View Idea"
+msgstr ""
+
+#: wp-idea-stream.php:46
+msgid "Search Ideas"
+msgstr ""
+
+#: wp-idea-stream.php:47
+msgid "No Ideas Found"
+msgstr ""
+
+#: wp-idea-stream.php:48
+msgid "No Ideas Found in Trash"
+msgstr ""
+
+#: wp-idea-stream.php:67
+msgid "Categories"
+msgstr ""
+
+#: wp-idea-stream.php:68
+msgid "Category"
+msgstr ""
+
+#: wp-idea-stream.php:69
+msgid "Edit Category"
+msgstr ""
+
+#: wp-idea-stream.php:70
+msgid "Update Category"
+msgstr ""
+
+#: wp-idea-stream.php:71
+msgid "Add New Category"
+msgstr ""
+
+#: wp-idea-stream.php:72
+msgid "New Category Name"
+msgstr ""
+
+#: wp-idea-stream.php:73
+msgid "All Categories"
+msgstr ""
+
+#: wp-idea-stream.php:74
+msgid "Search Categories"
+msgstr ""
+
+#: wp-idea-stream.php:75
+msgid "Parent Category"
+msgstr ""
+
+#: wp-idea-stream.php:76
+msgid "Parent Category:"
+msgstr ""
+
+#: wp-idea-stream.php:86
+msgid "Tags"
+msgstr ""
+
+#: wp-idea-stream.php:87
+msgid "Tag"
+msgstr ""
+
+#: wp-idea-stream.php:88
+msgid "Edit Tag"
+msgstr ""
+
+#: wp-idea-stream.php:89
+msgid "Update Tag"
+msgstr ""
+
+#: wp-idea-stream.php:90
+msgid "Add New Tag"
+msgstr ""
+
+#: wp-idea-stream.php:91
+msgid "New Tag Name"
+msgstr ""
+
+#: wp-idea-stream.php:92
+msgid "All Tags"
+msgstr ""
+
+#: wp-idea-stream.php:93
+msgid "Search Tags"
+msgstr ""
+
+#: wp-idea-stream.php:94
+msgid "Popular Tags"
+msgstr ""
+
+#: wp-idea-stream.php:95
+msgid "Separate tags with commas"
+msgstr ""
+
+#: wp-idea-stream.php:96
+msgid "Add or remove tags"
+msgstr ""
+
+#: wp-idea-stream.php:97
+msgid "Choose from the most popular tags"
+msgstr ""
+
+#: wp-idea-stream.php:120
+msgid "To update your Biographical Info, please use this blog form"
+msgstr ""
+
+#: wp-idea-stream.php:269 wp-idea-stream.php:288 wp-idea-stream.php:697 wp-idea-stream-widgets.php:51
+msgid "Featured Ideas"
+msgstr ""
+
+#: wp-idea-stream.php:272 wp-idea-stream.php:291
+msgid "Author Ideas"
+msgstr ""
+
+#: wp-idea-stream.php:306
+msgid "Your idea is awaiting moderation. Thanks for submitting it."
+msgstr ""
+
+#: wp-idea-stream.php:315
+msgid "Please make sure to check the following error(s) :"
+msgstr ""
+
+#: wp-idea-stream.php:322
+msgid "Title of your Idea"
+msgstr ""
+
+#: wp-idea-stream.php:323
+msgid "Content of your Idea"
+msgstr ""
+
+#: wp-idea-stream.php:324
+msgid "Choose at least one category"
+msgstr ""
+
+#: wp-idea-stream.php:335
+msgid "Add your tag(s)"
+msgstr ""
+
+#: wp-idea-stream.php:335
+msgid "Type your tag, then hit the return or space key to add it"
+msgstr ""
+
+#: wp-idea-stream.php:341
+msgid "Submit your idea"
+msgstr ""
+
+#: wp-idea-stream.php:354
+msgid "You need to be member of this site and logged in to submit an idea"
+msgstr ""
+
+#: wp-idea-stream.php:397
+msgid "Saving your rating, please wait"
+msgstr ""
+
+#: wp-idea-stream.php:405
+msgid "Thanks to your rate the average rating of this idea is now : "
+msgstr ""
+
+#: wp-idea-stream.php:414
+msgid "You must be logged in to rate this idea!"
+msgstr ""
+
+#: wp-idea-stream.php:427 wp-idea-stream.php:504
+msgid "not rated yet"
+msgstr ""
+
+#: wp-idea-stream.php:578
+msgid "Share this idea!"
+msgstr ""
+
+#: wp-idea-stream.php:580
+msgid "Share by email"
+msgstr ""
+
+#: wp-idea-stream.php:610
+msgid "Feature this idea ?"
+msgstr ""
+
+#: wp-idea-stream.php:696 wp-idea-stream-widgets.php:48
+msgid "My Ideas"
+msgstr ""
+
+#: wp-idea-stream.php:707 wp-idea-stream-options.php:75
+msgid "IdeaStream Options"
+msgstr ""
+
+#: wp-idea-stream.php:758
+msgid "<strong>Idea Stream is almost ready</strong>. You must <a href=\"%s\">update your permalink structure</a> to something other than the default for it to work."
+msgstr ""
+
+#: wp-idea-stream.php:763
+msgid "<strong>Idea Stream is almost ready</strong>. You must <a href=\"%s\">refresh your permalink structure</a> to something other than the default <strong>in order to activate the Ideas post type.</strong>"
+msgstr ""
+
+#: si-tiny-mce.php:275 si-tiny-mce.php:317
+msgid "Add a link"
+msgstr ""
+
+#: si-tiny-mce.php:282 si-tiny-mce.php:324
+msgid "Please select some content for your link"
+msgstr ""
+
+#: si-tiny-mce.php:285 si-tiny-mce.php:327
+msgid "Add the url of your link"
+msgstr ""
+
+#: si-tiny-mce.php:294 si-tiny-mce.php:334
+msgid "Add an image"
+msgstr ""
+
+#: si-tiny-mce.php:298 si-tiny-mce.php:338
+msgid "Url to your image"
+msgstr ""
+
+#: si-tiny-mce.php:300 si-tiny-mce.php:340
+msgid "Width in pixels of your image (only numbers)"
+msgstr ""
+
+#: wp-idea-stream-add-new.php:4
+msgid "You need to use the IdeaStream form to submit an idea"
+msgstr ""
+
+#: wp-idea-stream-add-new.php:7
+msgid "You need to be a member of this site to submit an idea"
+msgstr ""
+
+#: wp-idea-stream-add-new.php:11
+msgid "Title is required"
+msgstr ""
+
+#: wp-idea-stream-add-new.php:14
+msgid "Content is required"
+msgstr ""
+
+#: wp-idea-stream-add-new.php:17
+msgid "Category is required"
+msgstr ""
+
+#: wp-idea-stream-options.php:52
+msgid "<strong>IdeaStream Options saved</strong>"
+msgstr ""
+
+#: wp-idea-stream-options.php:79
+msgid "Idea Submission Options"
+msgstr ""
+
+#: wp-idea-stream-options.php:81
+msgid "Image Button"
+msgstr ""
+
+#: wp-idea-stream-options.php:87
+msgid "Status of new ideas"
+msgstr ""
+
+#: wp-idea-stream-options.php:94
+msgid "Link Button"
+msgstr ""
+
+#: wp-idea-stream-options.php:100
+msgid "Awaiting moderation message"
+msgstr ""
+
+#: wp-idea-stream-options.php:103
+msgid "Image max width in pixels <small>(default is 300)</small>"
+msgstr ""
+
+#: wp-idea-stream-options.php:106
+msgid "Message to display if user is not logged in"
+msgstr ""
+
+#: wp-idea-stream-options.php:114
+msgid "IdeaStream Ratings, Sharing and Featuring Options"
+msgstr ""
+
+#: wp-idea-stream-options.php:117
+msgid "Built in rating system"
+msgstr ""
+
+#: wp-idea-stream-options.php:123
+msgid "Comma separated list of captions for the stars"
+msgstr ""
+
+#: wp-idea-stream-options.php:128
+msgid "Sharing options"
+msgstr ""
+
+#: wp-idea-stream-options.php:134
+msgid "Twitter account <small>(leave blank to disable)</small>"
+msgstr ""
+
+#: wp-idea-stream-options.php:140
+msgid "Featuring ideas in comment area"
+msgstr ""
+
+#: wp-idea-stream-options.php:146
+msgid "<small>Admin and Editor can also feature ideas by adding a postmeta named <b>idea_stream_featured</b> with a value of <b>1</b>.</small>"
+msgstr ""
+
+#: wp-idea-stream-options.php:149
+msgid "Add a comma separated list of trusted user ids to help you"
+msgstr ""
+
+#: wp-idea-stream-options.php:157
+msgid "Save IdeaStream Options"
+msgstr ""
+
+#: wp-idea-stream-templatetags.php:6
+msgid "<span class=\"%1$s\">Posted on</span> %2$s <span class=\"meta-sep\">by</span> %3$s"
+msgstr ""
+
+#: wp-idea-stream-templatetags.php:15
+msgid "View all ideas by %s"
+msgstr ""
+
+#: wp-idea-stream-templatetags.php:26
+msgid "Save this description"
+msgstr ""
+
+#: wp-idea-stream-templatetags.php:36
+msgid "Categories: "
+msgstr ""
+
+#: wp-idea-stream-templatetags.php:40
+msgid "with "
+msgstr ""
+
+#: wp-idea-stream-widgets.php:17
+msgid "Displays the different menus available in WP IdeaStream Plugin"
+msgstr ""
+
+#: wp-idea-stream-widgets.php:18 wp-idea-stream-widgets.php:30 wp-idea-stream-widgets.php:68
+msgid "IdeaStream Menu"
+msgstr ""
+
+#: wp-idea-stream-widgets.php:73 wp-idea-stream-widgets.php:125 wp-idea-stream-widgets.php:206 wp-idea-stream-widgets.php:275
+msgid "Title:"
+msgstr ""
+
+#: wp-idea-stream-widgets.php:75
+msgid "Hide Featured menu"
+msgstr ""
+
+#: wp-idea-stream-widgets.php:76
+msgid "Show Featured menu"
+msgstr ""
+
+#: wp-idea-stream-widgets.php:89
+msgid "The most used Idea Stream tags in cloud format"
+msgstr ""
+
+#: wp-idea-stream-widgets.php:90 wp-idea-stream-widgets.php:99
+msgid "IdeaStream Tag Cloud"
+msgstr ""
+
+#: wp-idea-stream-widgets.php:127
+msgid "Amount of Tags:"
+msgstr ""
+
+#: wp-idea-stream-widgets.php:139
+msgid "A list or a dropdown of IdeaStream categories"
+msgstr ""
+
+#: wp-idea-stream-widgets.php:140 wp-idea-stream-widgets.php:149
+msgid "IdeaStream Categories"
+msgstr ""
+
+#: wp-idea-stream-widgets.php:161
+msgid "Select IdeaStream Category"
+msgstr ""
+
+#: wp-idea-stream-widgets.php:210
+msgid "Display as dropdown"
+msgstr ""
+
+#: wp-idea-stream-widgets.php:222
+msgid "The best rated Ideas by the members"
+msgstr ""
+
+#: wp-idea-stream-widgets.php:223 wp-idea-stream-widgets.php:231
+msgid "IdeaStream Best Rated"
+msgstr ""
+
+#: wp-idea-stream-widgets.php:251
+msgid "Average rating: "
+msgstr ""
+
+#: wp-idea-stream-widgets.php:277
+msgid "Amount of ideas:"
+msgstr ""
+
+#: wp-idea-stream-widgets.php:280
+msgid "Display only ideas of current month"
+msgstr ""
+
+#: all-ideas.php:14
+msgid "Number of ideas so far: %s"
+msgstr ""
+
+#: all-ideas.php:21 category-ideas.php:27 featured-ideas.php:41 idea-author.php:88 tag-ideas.php:21
+msgid "No Ideas!"
+msgstr ""
+
+#: all-ideas.php:26
+msgid "OOps, It looks like no idea has been submitted yet, <a href=\"%s\" title=\"Submit your idea\">add yours</a>"
+msgstr ""
+
+#: all-ideas.php:28
+msgid "OOps, It looks like no idea has been submitted yet, please log in to add yours!"
+msgstr ""
+
+#: all-ideas.php:39 category-ideas.php:43 featured-ideas.php:31 idea-author.php:99 tag-ideas.php:39
+msgid "Permalink to %s"
+msgstr ""
+
+#: all-ideas.php:62 category-ideas.php:64 featured-ideas.php:54 idea-author.php:122 single-idea.php:53 tag-ideas.php:60
+msgid "<span class=\"%1$s\">Tagged</span> %2$s"
+msgstr ""
+
+#: all-ideas.php:67 category-ideas.php:69 featured-ideas.php:59 idea-author.php:127 tag-ideas.php:65
+msgid "Leave a comment"
+msgstr ""
+
+#: all-ideas.php:67 category-ideas.php:69 featured-ideas.php:59 idea-author.php:127 tag-ideas.php:65
+msgid "1 Comment"
+msgstr ""
+
+#: all-ideas.php:67 category-ideas.php:69 featured-ideas.php:59 idea-author.php:127 tag-ideas.php:65
+msgid "% Comments"
+msgstr ""
+
+#: all-ideas.php:68 category-ideas.php:70 featured-ideas.php:60 idea-author.php:42 idea-author.php:64 idea-author.php:128 single-idea.php:57 tag-ideas.php:66
+msgid "Edit"
+msgstr ""
+
+#: category-ideas.php:14
+msgid "Category Archives: %s | %s ideas were posted in this category so far"
+msgstr ""
+
+#: category-ideas.php:31
+msgid "OOps, It looks like no idea has been submitted in this category yet, <a href=\"%s\" title=\"Submit your idea\">add yours</a>"
+msgstr ""
+
+#: category-ideas.php:33
+msgid "OOps, It looks like no idea has been submitted in this category yet, please log in to add yours!"
+msgstr ""
+
+#: featured-ideas.php:14
+msgid "Featured Ideas | %s ideas are featured so far"
+msgstr ""
+
+#: featured-ideas.php:23
+msgid "OOps, it looks like no idea has been featured yet."
+msgstr ""
+
+#: idea-author.php:33 idea-author.php:55 single-idea.php:33
+msgid "About %s"
+msgstr ""
+
+#: idea-author.php:37 idea-author.php:59
+msgid "This user hasn't filled his info"
+msgstr ""
+
+#: idea-author.php:47
+msgid "Author Archives: %s | Amount of submitted ideas so far: %s"
+msgstr ""
+
+#: idea-author.php:90
+msgid "Apologies, this user has not submitted any idea so far"
+msgstr ""
+
+#: new-idea.php:6
+msgid "Submit your idea!"
+msgstr ""
+
+#: single-idea.php:37
+msgid "View all ideas by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: tag-ideas.php:14
+msgid "Tag Archives: %s | %s ideas were posted in this tag so far"
+msgstr ""
+
+#: tag-ideas.php:26
+msgid "OOps, It looks like no idea has been submitted in this tag yet, <a href=\"%s\" title=\"Submit your idea\">add yours</a>"
+msgstr ""
+
+#: tag-ideas.php:28
+msgid "OOps, It looks like no idea has been submitted in this tag yet, please log in to add yours!"
+msgstr ""

@@ -1,0 +1,31 @@
+.ideastream_share{
+	margin-top:10px;
+	padding:10px;
+	border:solid 1px #f1f1f1;
+	margin-left:0px;
+}
+.ideastream_share li{
+	display:inline-block;
+	margin-right:20px;
+}
+.ideastream_share_email, .ideastream_share_text{
+	vertical-align:top;
+}
+
+
+.ideastream_share_twitter iframe{
+	vertical-align:baseline;
+}
+#ideastream_featured{
+	padding:20px;
+	background: #F2F7FC;
+	margin:10px;
+}
+#ideastream_featured label{
+	display:inline-block;
+	font-size:1em;
+	width:98%;
+}
+#ideastream_featured input[type=radio]{
+	width:auto;
+}

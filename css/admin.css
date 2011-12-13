@@ -1,0 +1,15 @@
+.ideastream-admin .idea-options{
+	margin-top:20px;
+	width:83%;
+}
+.ideastream-admin fieldset{
+	border:solid 1px #CCC;
+	padding:10px;
+}
+.idea-sep{
+	height:5px;
+	border-top:solid 1px #F4F4F4;
+}
+.icon32-posts-ideas{
+	background:url(../images/is-logo.png) no-repeat!important;
+}

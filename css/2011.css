@@ -1,0 +1,15 @@
+#content{
+	float:left!important;
+	margin-right:5%!important;
+	width:58.4%!important;
+}
+#entry-author-info{
+	background: #f2f7fc;
+	border-top: 4px solid #464646;
+	clear: both;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 24px 0;
+	overflow: hidden;
+	padding: 18px 20px;
+}

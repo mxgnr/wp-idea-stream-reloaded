@@ -345,7 +345,7 @@ function wp_idea_stream_load_editor() {
 		$idea_content .= '<div class="new-idea-form"><label for="_wp_is_title">'.__('Title of your Idea','wp-idea-stream').'</label><input type="text" id="wp_is_title" name="_wp_is_title" value="'.wp_kses(stripslashes($_POST["_wp_is_title"]), array()).'"/></div>';
 		$idea_content .= '<div class="new-idea-form"><label for="content">'.__('Content of your Idea','wp-idea-stream').'</label><textarea tabindex="2" name="content" id="ideastream_content" class="ideastream_tinymce" cols="40" rows="12" value="'.wp_kses(stripslashes($_POST["content"]), wp_idea_stream_allowed_html_tags()).'"></textarea></div>';
 		
-		$idea_content .= '<div class="new-idea-form"><label for="_wp_is_category">'.__('Choose at least one category','wp-idea-stream').'</label>';
+		$idea_content .= '<div class="new-idea-form"><label for="_wp_is_category">'.__('Choose the best category for your idea','wp-idea-stream').' :</label>';
 		$idea_content .= '<select name="_wp_is_category">';
 		// getting taxo cat
 		$table_taxo = get_terms('category-ideas', 'orderby=count&hide_empty=0');
@@ -818,12 +818,13 @@ function wp_idea_stream_fix_404_new_idea($bodyclass){
 		}
 		return $bodyclass;
 	}
-	elseif(is_best_ideas()){ // Fix also the 404 class on best-ideas page
+	if(is_best_ideas()){ // Fix also the 404 class on best-ideas page
 		for($i=0;$i<count($bodyclass);$i++){
 			if($bodyclass[$i]=="error404"){
 				$bodyclass[$i]="is_best_idea";
 			}
 		}
+		return $bodyclass;
 	}
 	else return $bodyclass;
 }

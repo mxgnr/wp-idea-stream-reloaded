@@ -234,11 +234,6 @@ msgstr "Titre de votre Idée"
 msgid "Content of your Idea"
 msgstr "Contenu de votre Idée"
 
-#: wp-idea-stream.php:348
-#@ wp-idea-stream
-msgid "Choose at least one category"
-msgstr "Sélectionnez au moins une catégorie"
-
 #: wp-idea-stream.php:359
 #@ wp-idea-stream
 msgid "Add your tag(s)"
@@ -858,30 +853,30 @@ msgstr "Bouton Image (Editeur Wysiwyg)"
 msgid "Link Button (Wysiwyg Editor)"
 msgstr "Bouton Lien (Editeur Wysiwyg)"
 
-#: includes/wp-idea-stream-templatetags.php:52
-#@ wp-idea-stream
-msgid "Categorie: "
-msgstr "Catégorie:"
-
 #: templates/best-ideas.php:23
 #@ wp-idea-stream
 msgid "You need to install the <a href=\"http://wordpress.org/extend/plugins/vote-it-up/\">Vote It Up plugin</a> in order to active this page"
 msgstr "Il est nécessaire d'installer le plugin <a href=\\\"http://wordpress.org/extend/plugins/vote-it-up/\\\">Vote It Up</a> pour activer cette page"
 
-#: wp-idea-stream.php:844
+#: wp-idea-stream.php:845
 #, php-format
 #@ default
 msgid "New comment on your post \"%s\""
 msgstr ""
 
-#: wp-idea-stream.php:845
+#: wp-idea-stream.php:846
 #@ default
 msgid "Comment: "
 msgstr ""
 
-#: wp-idea-stream.php:846
+#: wp-idea-stream.php:847
 #, php-format
 #@ default
 msgid "Permalink: %s"
 msgstr ""
+
+#: wp-idea-stream.php:348
+#@ wp-idea-stream
+msgid "Choose the best category for your idea"
+msgstr "Choisissez la catégorie appropriée pour votre idée"
 

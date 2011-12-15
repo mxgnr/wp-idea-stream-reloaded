@@ -49,7 +49,7 @@ function wp_idea_stream_new_form(){
 }
 
 function wp_idea_stream_posted_in_cat(){
-	echo get_the_term_list( get_the_ID(), 'category-ideas', __('Categorie: ','wp-idea-stream'), ', ',' ');
+	echo get_the_term_list( get_the_ID(), 'category-ideas');
 }
 
 function wp_idea_stream_posted_in_tag(){

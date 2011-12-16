@@ -6,6 +6,7 @@
  * @subpackage WP Idea Stream
  * @since WP Idea Stream 1.0
  */
+header('HTTP/1.1 200 OK');
 get_header()?>
 <div id="container">
 	<div id="content" role="main">

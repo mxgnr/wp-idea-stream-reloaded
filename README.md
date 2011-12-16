@@ -20,7 +20,6 @@ Ce plugin est livré **tel-quel**, j'assure un support et un suivi des correctio
 
 N'hésitez pas à réagir, postez un message sur le tracker GitHub (https://github.com/maxgranier/wp-idea-stream-reloaded/issues)
 
---------------------------------------------------------
 
 INSTALLATION
 ------------

@@ -24,7 +24,7 @@ function wp_idea_stream_register_post_type(){
 		'public'=>true,
 		'query_var'=>'ideas',
 		'rewrite'=>array(
-			'slug'=>'is/idea',
+			'slug'=>'feedback/idea',
 			'with_front'=>false),
 		'supports'=>array(
 			'title',
@@ -61,7 +61,7 @@ function wp_idea_stream_register_taxo(){
 		'hierarchical'=>true,
 		'query_var'=>'category-ideas',
 		'rewrite'=>array(
-			'slug'=>'is/category',
+			'slug'=>'feedback/category',
 			'with_front'=>false),
 		'labels'=>array(
 			'name'=> __('Categories','wp-idea-stream'),
@@ -80,7 +80,7 @@ function wp_idea_stream_register_taxo(){
 		'query_var'=>'tag-ideas',
 		'show_tagcloud'=>true,
 		'rewrite'=>array(
-			'slug'=>'is/tag',
+			'slug'=>'feedback/tag',
 			'with_front'=>false),
 		'labels'=>array(
 			'name'=> __('Tags','wp-idea-stream'),
@@ -222,7 +222,7 @@ function wp_idea_stream_catch_uri(){
 			'post_type'=> 'ideas',
 			'paged' => $pagid
 		);
-		query_posts( $args );
+		$test = query_posts( $args );
 		$q = new WP_Query ($args);
 		$idea_meta = array("all_count" => $q->found_posts, "per_page" => $q->query_vars["posts_per_page"]);
 		$template = locate_template('all-ideas.php', true);
@@ -348,7 +348,7 @@ function wp_idea_stream_load_editor() {
 		$idea_content .= '<div class="new-idea-form"><label for="_wp_is_category">'.__('Choose the best category for your idea','wp-idea-stream').' :</label>';
 		$idea_content .= '<select name="_wp_is_category">';
 		// getting taxo cat
-		$table_taxo = get_terms('category-ideas', 'orderby=count&hide_empty=0');
+		$table_taxo = get_terms('category-ideas', 'orderby=name&hide_empty=0');
 		if(count($table_taxo)>=0){
 			foreach($table_taxo as $taxo){
 				$idea_content .='<option id="wp_is_category-'.$taxo->term_id.'" value="'.$taxo->term_id.'">'.$taxo->name.'</option>';
@@ -725,12 +725,12 @@ add_filter( 'the_posts', 'wp_idea_stream_fix_the_posts_on_activity_front' );
 function wp_idea_stream_adminbar_menu($wp_admin_bar){
 	if(is_user_logged_in()){
 		global $current_user;
-		$wp_admin_bar->add_menu( array( 'id' => 'wpideastream', 'title' => __('IdeaStream','wp-idea-stream'), 'href' => get_bloginfo('siteurl').'/is/all-ideas/' ) );
-		$wp_admin_bar->add_menu( array( 'parent' => 'wpideastream', 'title' => __('All Ideas','wp-idea-stream'), 'href' => get_bloginfo('siteurl').'/is/all-ideas/' ) );
+		$wp_admin_bar->add_menu( array( 'id' => 'wpideastream', 'title' => __('IdeaStream','wp-idea-stream'), 'href' => get_bloginfo('siteurl').'/feedback/all-ideas/' ) );
+		$wp_admin_bar->add_menu( array( 'parent' => 'wpideastream', 'title' => __('All Ideas','wp-idea-stream'), 'href' => get_bloginfo('siteurl').'/feedback/all-ideas/' ) );
 		$wp_admin_bar->add_menu( array( 'parent' => 'wpideastream', 'title' => __('My Ideas','wp-idea-stream'), 'href' => get_author_idea_url($current_user->ID) ) );
-		$wp_admin_bar->add_menu( array( 'parent' => 'wpideastream', 'title' => __('Featured Ideas','wp-idea-stream'), 'href' => get_bloginfo('siteurl').'/is/featured-ideas/' ) );
-		$wp_admin_bar->add_menu( array( 'parent' => 'wpideastream', 'title' => __('Best Ideas','wp-idea-stream'), 'href' => get_bloginfo('siteurl').'/is/best-ideas/' ) );
-		$wp_admin_bar->add_menu( array( 'parent' => 'wpideastream', 'title' => __('New Idea','wp-idea-stream'), 'href' => get_bloginfo('siteurl').'/is/new-idea/' ) );
+		$wp_admin_bar->add_menu( array( 'parent' => 'wpideastream', 'title' => __('Featured Ideas','wp-idea-stream'), 'href' => get_bloginfo('siteurl').'/feedback/featured-ideas/' ) );
+		$wp_admin_bar->add_menu( array( 'parent' => 'wpideastream', 'title' => __('Best Ideas','wp-idea-stream'), 'href' => get_bloginfo('siteurl').'/feedback/best-ideas/' ) );
+		$wp_admin_bar->add_menu( array( 'parent' => 'wpideastream', 'title' => __('New Idea','wp-idea-stream'), 'href' => get_bloginfo('siteurl').'/feedback/new-idea/' ) );
 	}
 }
 
@@ -759,11 +759,11 @@ function wp_idea_stream_print_admin_css(){
 add_action('init', 'wp_idea_stream_add_rewrite_rules');
 
 function wp_idea_stream_add_rewrite_rules(){
-	add_rewrite_rule('is/idea-author/?([^/]*)', 'index.php?pagename=idea-author&user_slug=$matches[1]', 'top');
-	add_rewrite_rule('is/all-ideas', 'index.php?pagename=all-ideas', 'top');
-	add_rewrite_rule('is/new-idea', 'index.php?pagename=new-idea', 'top');
-	add_rewrite_rule('is/featured-ideas', 'index.php?pagename=featured-ideas', 'top');
-	add_rewrite_rule('is/best-ideas, index.php?pagename=best-ideas', 'top');
+	add_rewrite_rule('feedback/idea-author/?([^/]*)', 'index.php?pagename=idea-author&user_slug=$matches[1]', 'top');
+	add_rewrite_rule('feedback/all-ideas', 'index.php?pagename=all-ideas', 'top');
+	add_rewrite_rule('feedback/new-idea', 'index.php?pagename=new-idea', 'top');
+	add_rewrite_rule('feedback/featured-ideas', 'index.php?pagename=featured-ideas', 'top');
+	add_rewrite_rule('feedback/best-ideas, index.php?pagename=best-ideas', 'top');
 }
 
 add_filter('query_vars', 'wp_idea_stream_add_query_vars');

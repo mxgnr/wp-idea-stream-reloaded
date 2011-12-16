@@ -42,13 +42,13 @@ class WP_Idea_Stream_Navig extends WP_Widget {
 		     $after_title; ?>
 		
 			<ul class="is_navig_widget">
-				<li class="is_menu_all_ideas"><a href="<?php echo get_bloginfo('siteurl');?>/is/all-ideas/" title="<?php _e('All Ideas','wp-idea-stream');?>"><?php _e('All Ideas','wp-idea-stream');?></a></li>
-				<li class="is_menu_new_idea"><a href="<?php echo get_bloginfo('siteurl');?>/is/new-idea/" title="<?php _e('New Idea','wp-idea-stream');?>"><?php _e('New Idea','wp-idea-stream');?></a></li>
+				<li class="is_menu_all_ideas"><a href="<?php echo get_bloginfo('siteurl');?>/feedback/all-ideas/" title="<?php _e('All Ideas','wp-idea-stream');?>"><?php _e('All Ideas','wp-idea-stream');?></a></li>
+				<li class="is_menu_new_idea"><a href="<?php echo get_bloginfo('siteurl');?>/feedback/new-idea/" title="<?php _e('New Idea','wp-idea-stream');?>"><?php _e('New Idea','wp-idea-stream');?></a></li>
 				<?php if(is_user_logged_in()):?>
 				<li class="is_menu_my_ideas"><a href="<?php echo get_author_idea_url($current_user->ID);?>" title="<?php _e('My Ideas','wp-idea-stream');?>"><?php _e('My Ideas','wp-idea-stream');?></a></li>
 				<?php endif;?>
 				<?php if($instance['idea_stream_show_featured']==1):?>
-				<li class="is_menu_featured_ideas"><a href="<?php echo get_bloginfo('siteurl');?>/is/featured-ideas/" title="<?php _e('Featured Ideas','wp-idea-stream');?>"><?php _e('Featured Ideas','wp-idea-stream');?></a></li>
+				<li class="is_menu_featured_ideas"><a href="<?php echo get_bloginfo('siteurl');?>/feedback/featured-ideas/" title="<?php _e('Featured Ideas','wp-idea-stream');?>"><?php _e('Featured Ideas','wp-idea-stream');?></a></li>
 				<?php endif;?>
 			</ul>
 

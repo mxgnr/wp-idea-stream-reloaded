@@ -566,35 +566,35 @@ msgstr "Nombre d'idées:"
 msgid "Display only ideas of current month"
 msgstr "Afficher uniquement le mois en cours"
 
-#: templates/all-ideas.php:14
+#: templates/all-ideas.php:15
 #, php-format
 #@ wp-idea-stream
 msgid "Number of ideas so far: %s"
 msgstr "Nombre d'Idées jusqu'à présent: %s"
 
-#: templates/all-ideas.php:21
+#: templates/all-ideas.php:22
 #: templates/category-ideas.php:27
-#: templates/featured-ideas.php:21
+#: templates/featured-ideas.php:22
 #: templates/idea-author.php:88
 #: templates/tag-ideas.php:21
 #@ wp-idea-stream
 msgid "No Ideas!"
 msgstr "Aucune idée!"
 
-#: templates/all-ideas.php:26
+#: templates/all-ideas.php:27
 #, php-format
 #@ wp-idea-stream
 msgid "OOps, It looks like no idea has been submitted yet, <a href=\"%s\" title=\"Submit your idea\">add yours</a>"
 msgstr "Oops, aucune idée n'a pour l'instant été déposée, <a href=\"%s\" title=\"Déposez la vôtre\">Déposez la vôtre</a>"
 
-#: templates/all-ideas.php:28
+#: templates/all-ideas.php:29
 #@ wp-idea-stream
 msgid "OOps, It looks like no idea has been submitted yet, please log in to add yours!"
 msgstr "Oops, aucune idée n'a pour l'instant été déposée, merci de vous authentifier pour déposer la vôtre!"
 
-#: templates/all-ideas.php:39
+#: templates/all-ideas.php:40
 #: templates/category-ideas.php:43
-#: templates/featured-ideas.php:31
+#: templates/featured-ideas.php:32
 #: templates/idea-author.php:99
 #: templates/tag-ideas.php:39
 #, php-format
@@ -602,9 +602,9 @@ msgstr "Oops, aucune idée n'a pour l'instant été déposée, merci de vous aut
 msgid "Permalink to %s"
 msgstr "Permalien vers %s"
 
-#: templates/all-ideas.php:64
+#: templates/all-ideas.php:65
 #: templates/category-ideas.php:66
-#: templates/featured-ideas.php:56
+#: templates/featured-ideas.php:57
 #: templates/idea-author.php:124
 #: templates/single-idea.php:56
 #: templates/tag-ideas.php:62
@@ -613,36 +613,36 @@ msgstr "Permalien vers %s"
 msgid "<span class=\"%1$s\">Tagged</span> %2$s"
 msgstr "<span class=\"%1$s\">Taggé</span> %2$s"
 
-#: templates/all-ideas.php:69
+#: templates/all-ideas.php:70
 #: templates/category-ideas.php:71
-#: templates/featured-ideas.php:61
+#: templates/featured-ideas.php:62
 #: templates/idea-author.php:129
 #: templates/tag-ideas.php:67
 #@ wp-idea-stream
 msgid "Leave a comment"
 msgstr "Commenter"
 
-#: templates/all-ideas.php:69
+#: templates/all-ideas.php:70
 #: templates/category-ideas.php:71
-#: templates/featured-ideas.php:61
+#: templates/featured-ideas.php:62
 #: templates/idea-author.php:129
 #: templates/tag-ideas.php:67
 #@ wp-idea-stream
 msgid "1 Comment"
-msgstr "1 Commentaire"
+msgstr "1 commentaire"
 
-#: templates/all-ideas.php:69
+#: templates/all-ideas.php:70
 #: templates/category-ideas.php:71
-#: templates/featured-ideas.php:61
+#: templates/featured-ideas.php:62
 #: templates/idea-author.php:129
 #: templates/tag-ideas.php:67
 #@ wp-idea-stream
 msgid "% Comments"
-msgstr "% Commentaires"
+msgstr "% commentaires"
 
-#: templates/all-ideas.php:70
+#: templates/all-ideas.php:71
 #: templates/category-ideas.php:72
-#: templates/featured-ideas.php:62
+#: templates/featured-ideas.php:63
 #: templates/idea-author.php:42
 #: templates/idea-author.php:64
 #: templates/idea-author.php:130
@@ -669,14 +669,14 @@ msgstr "Oops, aucune idée n'a été déposée dans cette catégorie pour l'inst
 msgid "OOps, It looks like no idea has been submitted in this category yet, please log in to add yours!"
 msgstr "Oops, aucune idée n'a été déposée dans cette catégorie pour l'instant, merci de vous authentifier pour déposer la vôtre!"
 
-#: templates/best-ideas.php:14
-#: templates/featured-ideas.php:14
+#: templates/best-ideas.php:15
+#: templates/featured-ideas.php:15
 #, php-format
 #@ wp-idea-stream
 msgid "Featured Ideas | %s ideas are featured so far"
 msgstr "Idées Distinguées | %s idées ont été distinguées jusqu'à présent"
 
-#: templates/featured-ideas.php:23
+#: templates/featured-ideas.php:24
 #@ wp-idea-stream
 msgid "OOps, it looks like no idea has been featured yet."
 msgstr "OOps, aucune idée n'a été distinguée pour le moment."
@@ -811,11 +811,6 @@ msgstr ""
 msgid "&raquo;"
 msgstr ""
 
-#: includes/wp-idea-stream-templatetags.php:149
-#@ default
-msgid "Page: "
-msgstr ""
-
 #: wp-idea-stream.php:283
 #: wp-idea-stream.php:305
 #: wp-idea-stream.php:732
@@ -853,7 +848,7 @@ msgstr "Bouton Image (Editeur Wysiwyg)"
 msgid "Link Button (Wysiwyg Editor)"
 msgstr "Bouton Lien (Editeur Wysiwyg)"
 
-#: templates/best-ideas.php:23
+#: templates/best-ideas.php:24
 #@ wp-idea-stream
 msgid "You need to install the <a href=\"http://wordpress.org/extend/plugins/vote-it-up/\">Vote It Up plugin</a> in order to active this page"
 msgstr "Il est nécessaire d'installer le plugin <a href=\\\"http://wordpress.org/extend/plugins/vote-it-up/\\\">Vote It Up</a> pour activer cette page"
@@ -879,4 +874,9 @@ msgstr ""
 #@ wp-idea-stream
 msgid "Choose the best category for your idea"
 msgstr "Choisissez la catégorie appropriée pour votre idée"
+
+#: includes/wp-idea-stream-templatetags.php:149
+#@ default
+msgid "Page : "
+msgstr ""
 

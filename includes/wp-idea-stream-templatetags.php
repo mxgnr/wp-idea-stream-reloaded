@@ -45,7 +45,7 @@ function wp_idea_stream_desc_edit(){
 }
 
 function wp_idea_stream_new_form(){
-	return get_bloginfo('siteurl').'/is/new-idea/';
+	return get_bloginfo('siteurl').'/feedback/new-idea/';
 }
 
 function wp_idea_stream_posted_in_cat(){
@@ -60,7 +60,7 @@ function wp_idea_stream_posted_in_tag(){
 
 function get_author_idea_url($id){
 	$user_info = get_userdata($id);
-	$link = get_bloginfo('siteurl').'/is/idea-author/'.$user_info->user_login.'/';
+	$link = get_bloginfo('siteurl').'/feedback/idea-author/'.$user_info->user_login.'/';
 	return $link;
 }
 
@@ -146,7 +146,7 @@ function wp_idea_stream_paginate_link($paged = false){
 			
 		
  		if ( $page_links ) { ?>
-			<div class="nav-previous"><?php $page_links_text = sprintf( __( 'Page: ' ) . '%s',
+			<div class="nav-previous"><?php $page_links_text = sprintf( __( 'Page : ' ) . '%s',
 			$page_links
 		); echo $page_links_text."</div>";
 
@@ -350,35 +350,35 @@ function is_user_allowed_to_feature_ideas(){
 }
 
 function is_new_idea(){
-	if(ereg('is/new-idea', $_SERVER['REQUEST_URI'])){
+	if(ereg('feedback/new-idea', $_SERVER['REQUEST_URI'])){
 		return true;
 	}
 	else return false;
 }
 
 function is_all_ideas(){
-	if(ereg('is/all-ideas', $_SERVER['REQUEST_URI'])){
+	if(ereg('feedback/all-ideas', $_SERVER['REQUEST_URI'])){
 		return true;
 	}
 	else return false;
 }
 
 function is_featured_ideas(){
-	if(ereg('is/featured-ideas', $_SERVER['REQUEST_URI'])){
+	if(ereg('feedback/featured-ideas', $_SERVER['REQUEST_URI'])){
 		return true;
 	}
 	else return false;
 }
 
 function is_idea_author(){
-	if(ereg('is/idea-author', $_SERVER['REQUEST_URI'])){
+	if(ereg('feedback/idea-author', $_SERVER['REQUEST_URI'])){
 		return true;
 	}
 	else return false;
 }
 
 function is_best_ideas(){
-	if(ereg('is/best-ideas', $_SERVER['REQUEST_URI'])){
+	if(ereg('feedback/best-ideas', $_SERVER['REQUEST_URI'])){
 		return true;
 	}
 	else return false;
@@ -394,6 +394,16 @@ function get_vote_it_up_button() {
 		else return false;
 	}
 	else return false;
+}
+
+function detect_author_idea() {
+	$get_idea_guest_name = get_post_meta(get_the_ID(), 'ideastream_guest_name', true);
+	if(!empty($get_idea_guest_name)) {
+		return $get_idea_guest_name;
+	}
+	else {
+		return get_idea_author();
+	}
 }
 
 ?>

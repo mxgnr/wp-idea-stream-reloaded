@@ -3,9 +3,9 @@
 Plugin Name: WP Idea Stream Reloaded
 Plugin URI: http://github.com/maxgranier/wp-idea-stream-reloaded
 Description: Adds an Idea Management System to your WordPress!
-Version: 1.0.2
+Version: 1.0.3
 Requires at least: 3.1
-Tested up to: 3.3
+Tested up to: 3.4
 License: GNU/GPL 2
 Author: imath - maxgranier
 Author URI: http://imath.owni.fr/ - http://github.com/maxgranier/wp-idea-stream-reloaded
@@ -14,7 +14,7 @@ Author URI: http://imath.owni.fr/ - http://github.com/maxgranier/wp-idea-stream-
 define ( 'WP_IDEA_STREAM_PLUGIN_NAME', 'wp-idea-stream' );
 define ( 'WP_IDEA_STREAM_PLUGIN_URL', WP_PLUGIN_URL . '/' . WP_IDEA_STREAM_PLUGIN_NAME );
 define ( 'WP_IDEA_STREAM_PLUGIN_DIR', WP_PLUGIN_DIR . '/' . WP_IDEA_STREAM_PLUGIN_NAME );
-define ( 'WP_IDEA_STREAM_VERSION', '1.0.2' );
+define ( 'WP_IDEA_STREAM_VERSION', '1.0.3' );
 
 /*custom post type*/
 add_action('init','wp_idea_stream_register_post_type');
@@ -162,10 +162,14 @@ function wp_idea_stream_catch_uri(){
 		die();
 	}
 	elseif(get_query_var('pagename') == 'new-idea'){
+		status_header( 200 );
+		$wp_query->is_404 = false;
+		$wp_query->is_page = true;
 		wp_enqueue_script('utils');
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('si-tag-editor', WP_IDEA_STREAM_PLUGIN_URL .'/js/jquery.tag.editor-min.js', 'jquery');
 		wp_enqueue_style('style-subidea', WP_IDEA_STREAM_PLUGIN_URL .'/css/style.css');
+		wp_is_fix_css_editor();
 		$template = locate_template('new-idea.php', true);
 		if(!$template){
 			load_template(dirname( __FILE__ ) . '/templates/new-idea.php', true);
@@ -173,6 +177,8 @@ function wp_idea_stream_catch_uri(){
 		die();
 	}
 	elseif( get_query_var('pagename') == 'idea-author'){
+		status_header( 200 );
+		$wp_query->is_404 = false;
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('jraty', WP_IDEA_STREAM_PLUGIN_URL .'/js/jquery.raty.min.js', 'jquery');
 		global $user_slug;
@@ -194,6 +200,9 @@ function wp_idea_stream_catch_uri(){
 		die();
 	}
 	elseif(get_query_var('pagename') == 'featured-ideas'){
+		status_header( 200 );
+		$wp_query->is_404 = false;
+		$wp_query->is_page = true;
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('jraty', WP_IDEA_STREAM_PLUGIN_URL .'/js/jquery.raty.min.js', 'jquery');
 		$pagid = 1;
@@ -214,6 +223,8 @@ function wp_idea_stream_catch_uri(){
 		die();
 	}
 	elseif(get_query_var('pagename') == 'all-ideas' || wp_idea_stream_is_all_ideas_onfront()){
+		status_header( 200 );
+		$wp_query->is_404 = false;
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('jraty', WP_IDEA_STREAM_PLUGIN_URL .'/js/jquery.raty.min.js', 'jquery');
 		$pagid = 1;
@@ -325,6 +336,7 @@ function wp_idea_stream_load_editor() {
 		<?php
 	}
 	elseif (($ideastream_allow_guests == 1) || (($ideastream_allow_guests == 0) && is_user_logged_in())) {
+		wp_is_fix_editor_wp_lang_fatal_error();
 		require_once(dirname(__FILE__).'/includes/si-tiny-mce.php');
 		
 		if (count($wp_idea_stream_submit_errors) > 0) {

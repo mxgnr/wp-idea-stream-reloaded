@@ -355,28 +355,24 @@ function is_new_idea(){
 	}
 	else return false;
 }
-
 function is_all_ideas(){
 	if(ereg('feedback/all-ideas', $_SERVER['REQUEST_URI'])){
 		return true;
 	}
 	else return false;
 }
-
 function is_featured_ideas(){
 	if(ereg('feedback/featured-ideas', $_SERVER['REQUEST_URI'])){
 		return true;
 	}
 	else return false;
 }
-
 function is_idea_author(){
 	if(ereg('feedback/idea-author', $_SERVER['REQUEST_URI'])){
 		return true;
 	}
 	else return false;
 }
-
 function is_best_ideas(){
 	if(ereg('feedback/best-ideas', $_SERVER['REQUEST_URI'])){
 		return true;
@@ -406,4 +402,30 @@ function detect_author_idea() {
 	}
 }
 
+/**
+* Appeared in WP 3.4
+*/
+function wp_is_fix_css_editor(){
+	if( 3.4 <= wp_is_get_major_wp_version() ) {
+		
+		if( is_multisite() )
+			$url = get_blog_option(1, 'siteurl');
+			
+		else
+			$url = site_url();
+		
+		wp_enqueue_style('style-editor', $url . '/' . WPINC .'/css/editor.css');
+	}
+}
+
+function wp_is_fix_editor_wp_lang_fatal_error() {
+	if ( 3.4 <= wp_is_get_major_wp_version() && ! class_exists('_WP_Editors' ) )
+		require_once( ABSPATH . WPINC . '/class-wp-editor.php' );
+}
+
+function wp_is_get_major_wp_version() {
+	global $wp_version;
+	
+	return (float) $wp_version;
+}
 ?>

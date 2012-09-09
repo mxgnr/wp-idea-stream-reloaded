@@ -1,12 +1,12 @@
 <?php
 //Idea Stream Options
 if($_POST['_ideastream_save_options']){
-	
+
 	//allow guests to post or not
 	if(get_option('_ideastream_allow_guests')!=$_POST['_ideastream_allow_guests']){
 		update_option('_ideastream_allow_guests', $_POST['_ideastream_allow_guests']);
 	}
-	
+
 	//editor img and link button
 	$editor_options = array('image'=>intval($_POST['_idea_editor_image']),'link'=>intval($_POST['_idea_editor_link']));
 	update_option('_ideastream_editor_config', $editor_options);
@@ -98,7 +98,6 @@ function is_option_checked($option, $value){
 								<?php _e('Activate');?>&nbsp;
 								<input type="radio" value="0" name="_idea_editor_image" <?php if(is_option_checked($ideastream_editor_config['image'], 0)) echo "checked";?>>
 								<?php _e('Deactivate');?>
-							</td>
 						</tr>
 						<tr>
 							<td><label for="_idea_editor_link"><?php _e('Link Button (Wysiwyg Editor)','wp-idea-stream');?></label></td>

@@ -6,7 +6,7 @@
  * @subpackage Twenty_Ten
  * @since Twenty Ten 1.0
  */
-
+header('HTTP/1.1 200 OK');
 get_header(); ?>
 	<div id="container">
 		<div id="content" role="main">
@@ -14,8 +14,7 @@ get_header(); ?>
 
 							<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 								<h1 class="entry-title"><?php the_title(); ?></h1>
-								
-								
+
 								<div style="float: right;"><?php get_vote_it_up_button(); ?></div>
 
 								<div class="entry-meta">

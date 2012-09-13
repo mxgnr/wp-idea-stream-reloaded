@@ -38,7 +38,7 @@ get_header()?>
 		
 			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'wp-idea-stream' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-				
+
 				<div style="float: right;"><?php get_vote_it_up_button(); ?></div>
 
 				<div class="entry-meta">
@@ -70,6 +70,7 @@ get_header()?>
 					<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'wp-idea-stream' ), __( '1 Comment', 'wp-idea-stream' ), __( '% Comments', 'wp-idea-stream' ) ); ?></span>
 					<?php edit_post_link( __( 'Edit', 'wp-idea-stream' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
 				</div><!-- .entry-utility -->
+			
 			</div>
 			
 		<?php endwhile; // End the loop. Whew. ?>
